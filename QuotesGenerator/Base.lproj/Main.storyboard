@@ -53,6 +53,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwQ-vm-Row">
                                 <rect key="frame" x="179" y="333" width="56" height="30"/>
                                 <state key="normal" title="명언 생성"/>
+                                <connections>
+                                    <action selector="btnQuoteGenerator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aNu-qi-Cwb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -68,6 +71,10 @@
                             <constraint firstItem="hYR-tx-tnD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="knr-rs-DmC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lbName" destination="Fql-eT-dJL" id="6MG-p3-NE7"/>
+                        <outlet property="lbQuote" destination="fF8-UG-nbu" id="Wdh-54-2tR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
